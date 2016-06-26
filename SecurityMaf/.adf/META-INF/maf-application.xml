@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<adfmf:application xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:adfmf="http://xmlns.oracle.com/adf/mf"
+                   version="1.0" name="SecurityMaf" id="by.perevertkin.SecurityMaf"
+                   appControllerFolder="ApplicationController"
+                   listener-class="by.perevertkin.mafsecurity.application.LifeCycleListenerImpl">
+  <adfmf:featureReference refId="by.perevertkin.mafsecurity.mainFeature" id="fr1" loginConnRefId="httpConnection"/>
+  <adfmf:featureReference refId="by.perevertkin.mafsecurity.addFeature" id="fr2"/>
+  <adfmf:login defaultConnRefId="httpConnection"/>
+</adfmf:application>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<adfmf:features xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:adfmf="http://xmlns.oracle.com/adf/mf">
+  <adfmf:feature id="by.perevertkin.mafsecurity.mainFeature" name="mainFeature" securityEnabled="true">
+    <adfmf:content id="by.perevertkin.mafsecurity.mainFeature.1">
+      <adfmf:amx file="by.perevertkin.mafsecurity.mainFeature/index.amx"/>
+    </adfmf:content>
+  </adfmf:feature>
+  <adfmf:feature id="by.perevertkin.mafsecurity.addFeature" name="addFeature">
+    <adfmf:content id="by.perevertkin.mafsecurity.addFeature.1">
+      <adfmf:amx file="by.perevertkin.mafsecurity.addFeature/addPage.amx"/>
+    </adfmf:content>
+  </adfmf:feature>
+</adfmf:features>

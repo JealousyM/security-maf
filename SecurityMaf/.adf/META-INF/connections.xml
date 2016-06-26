@@ -1,0 +1,28 @@
+<References xmlns="http://xmlns.oracle.com/adf/jndi">
+  <Reference name="httpConnection" className="oracle.adf.model.connection.adfmf.LoginConnection"
+             adfCredentialStoreKey="httpConnection" partial="false" manageInOracleEnterpriseManager="true"
+             deployable="true" xmlns="">
+    <Factory className="oracle.adf.model.connection.adfmf.LoginConnectionFactory"/>
+    <RefAddresses>
+      <XmlRefAddr addrType="adfmfLogin">
+        <Contents>
+          <login url="http://192.168.43.134:7101/LoginApp/faces/welcome.jspx"/>
+          <logout url="http://192.168.43.134:7101/LoginApp/faces/welcome.jspx"/>
+          <authenticationMode value="hybrid"/>
+          <idleTimeout value="300"/>
+          <sessionTimeout value="28800"/>
+          <maxFailuresBeforeCredentialCleared value="3"/>
+          <rememberCredentials>
+            <enableRememberUserName value="true"/>
+            <rememberUserNameDefault value="true"/>
+            <enableRememberPassword value="true"/>
+            <rememberPasswordDefault value="true"/>
+            <enableStayLoggedIn value="false"/>
+          </rememberCredentials>
+          <accessControl/>
+          <userObjectFilter/>
+        </Contents>
+      </XmlRefAddr>
+    </RefAddresses>
+  </Reference>
+</References>
